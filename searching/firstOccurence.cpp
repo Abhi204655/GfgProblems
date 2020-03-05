@@ -7,7 +7,7 @@ int findFirstoccurence(int *arr, int l, int h, int x)
     {
         int mid = l + (h - l) / 2;
 
-        if (arr[mid] == x && (mid != 0 || arr[mid - 1] != x))
+        if (arr[mid] == x && (mid == 0 || arr[mid - 1] != x))
             return mid;
 
         else if (arr[mid] >= x)
