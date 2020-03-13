@@ -17,10 +17,11 @@ bool rotationPoint(int *arr, int l, int h, int ele)
 }
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5, 6};
+    int arr[] = {3, 4, 5, 1, 2};
     int n = sizeof(arr) / sizeof(arr[0]);
     if (rotationPoint(arr, 0, n, arr[0]))
-        cout << "Your array is rotated" << endl;
+        cout
+            << "Your array is rotated" << endl;
     else
         cout << "Not rotated" << endl;
     return 0;
